@@ -1,13 +1,43 @@
-<div class="chatbot">
+<!DOCTYPE html>
+<html>
 
-<div id="chat-messages" class="chat-messages"></div>
+<head>
 
-<input id="chat-input">
+<meta charset="UTF-8">
 
-<button onclick="sendMessage()">
-Enviar
-</button>
+<title>IA</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<img src="img/logo.png" class="logo-small">
+
+</header>
+
+<section class="section">
+
+<h1>IA NextWeb</h1>
+
+<p>Em breve lançaremos nossas IAs.</p>
+
+<div id="chat">
+
+<div id="messages"></div>
+
+<input id="input" placeholder="Pergunte algo...">
+
+<button onclick="sendMessage()">Enviar</button>
+
+</div>
+
+</section>
 
 <script src="js/chatbot.js"></script>
 
-</div>
+</body>
+</html>
