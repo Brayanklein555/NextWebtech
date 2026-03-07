@@ -1,1 +1,10 @@
-
+[
+{
+"nome":"Projeto 1",
+"imagem":"img/projeto1.jpg"
+},
+{
+"nome":"Projeto 2",
+"imagem":"img/projeto2.jpg"
+}
+]
