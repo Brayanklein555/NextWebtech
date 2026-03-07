@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>NextWeb Tech</title>
 
 <link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 </head>
 
 <body>
 
-<header>
+<div id="particles-js"></div>
+<div class="fog"></div>
+
+<header class="navbar">
+
+<img src="img/logo.png" class="logo-small">
 
 <nav>
 
 <a href="index.html">Início</a>
 <a href="servicos.html">Serviços</a>
 <a href="portfolio.html">Portfólio</a>
-<a href="ia.html">IA</a>
 <a href="blog.html">Blog</a>
+<a href="ia.html">IA</a>
 <a href="contato.html">Contato</a>
 
 </nav>
@@ -28,39 +38,37 @@
 
 <section class="hero">
 
+<img src="img/logo.png" class="logo-main">
+
 <h1>NextWeb Tech</h1>
 
-<p>
-Criamos sites, design de logo tipos e ate mesmo ediçoes de videos.
-</p>
+<p>Design, desenvolvimento web, edição e soluções digitais</p>
 
-<a class="btn" href="contato.html">
-Solicitar orçamento
-</a>
+<a href="contato.html" class="btn">Solicitar orçamento</a>
 
 </section>
 
-<section class="section">
+<section class="counter">
 
-<h2>Nossos números</h2>
-
-<div class="cards">
-
-<div class="card">
-<div class="counter" data-target="30">0</div>
-Projetos
+<div>
+<h2 id="sites">0</h2>
+<p>Sites Criados</p>
 </div>
 
-<div class="card">
-<div class="counter" data-target="15">0</div>
-Clientes
+<div>
+<h2 id="clientes">0</h2>
+<p>Clientes</p>
 </div>
 
+<div>
+<h2 id="projetos">0</h2>
+<p>Projetos</p>
 </div>
 
 </section>
 
 <script src="js/main.js"></script>
+<script src="js/particles.js"></script>
 
 </body>
 </html>
