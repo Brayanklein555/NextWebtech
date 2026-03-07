@@ -1,26 +1,20 @@
 fetch("data/projects.json")
 
-.then(response => response.json())
+.then(res=>res.json())
 
-.then(data => {
+.then(data=>{
 
-let container = document.getElementById("portfolio")
+const container=document.getElementById("portfolio")
 
-data.forEach(project => {
+data.forEach(project=>{
 
-container.innerHTML += `
+const div=document.createElement("div")
 
-<div class="project">
+div.className="project"
 
-<img src="${project.image}">
+div.innerHTML=`<img src="${project.imagem}">`
 
-<h3>${project.name}</h3>
-
-<p>${project.description}</p>
-
-</div>
-
-`
+container.appendChild(div)
 
 })
 
