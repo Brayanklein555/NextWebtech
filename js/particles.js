@@ -1,0 +1,31 @@
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 90 },
+    color: { value: "#bb00ff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.6 },
+    size: { value: 3 },
+
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#aa00ff",
+      opacity: 0.4,
+      width: 1
+    },
+
+    move: {
+      enable: true,
+      speed: 2
+    }
+  },
+
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      }
+    }
+  }
+});
