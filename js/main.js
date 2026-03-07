@@ -1,22 +1,23 @@
-// animação contadores
+const counters=document.querySelectorAll("h2");
 
-document.querySelectorAll(".counter").forEach(counter=>{
+counters.forEach(counter=>{
 
-let target=+counter.dataset.target
-let count=0
+let count=0;
 
 let update=()=>{
 
-count++
+count++;
 
-counter.innerText=count
+counter.innerText=count;
 
-if(count<target){
+if(count<100){
+
 requestAnimationFrame(update)
+
 }
 
 }
 
 update()
 
-})
+});
