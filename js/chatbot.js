@@ -1,14 +1,14 @@
 function sendMessage(){
 
-let input=document.getElementById("input")
+let input=document.getElementById("chatInput")
 
-let msg=input.value
+let text=input.value
 
-let box=document.getElementById("messages")
+let box=document.getElementById("chatBox")
 
-box.innerHTML+=`<p>Você: ${msg}</p>`
+box.innerHTML += "<p>Você: "+text+"</p>"
 
-box.innerHTML+=`<p>IA: Ainda estou em desenvolvimento.</p>`
+box.innerHTML += "<p>IA: Em breve terei respostas inteligentes.</p>"
 
 input.value=""
 
