@@ -1,34 +1,16 @@
-const counters=document.querySelectorAll("h2");
+// menu mobile
 
-counters.forEach(counter=>{
-
-let count=0;
-
-let update=()=>{
-
-count++;
-
-counter.innerText=count;
-
-if(count<100){
-
-requestAnimationFrame(update)
-
-}
-
-}
-
-update()
-
-});
-
-// MENU MOBILE
-
-const toggle = document.getElementById("menuToggle")
+const menuBtn = document.getElementById("menuBtn")
 const menu = document.getElementById("menu")
 
-toggle.addEventListener("click", () => {
+menuBtn.onclick = () => {
 
 menu.classList.toggle("active")
 
-})
+}
+
+// contadores
+
+document.getElementById("sites").innerText = 25
+document.getElementById("clientes").innerText = 14
+document.getElementById("projetos").innerText = 33
