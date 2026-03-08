@@ -93,3 +93,104 @@ background:#111;
 padding:30px;
 border-radius:10px;
 }
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(10,0,30,0.6);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+/* LOGO */
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-small{
+width:45px;
+border-radius:50%;
+box-shadow:0 0 15px #ff00cc;
+}
+
+.brand{
+font-weight:bold;
+font-size:18px;
+}
+
+/* MENU */
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:16px;
+position:relative;
+transition:0.3s;
+}
+
+/* EFEITO NEON */
+
+nav a:hover{
+color:#ff00cc;
+text-shadow:0 0 10px #ff00cc;
+}
+
+/* BOTÃO CONTATO */
+
+.btn-menu{
+padding:8px 18px;
+border-radius:20px;
+background:linear-gradient(45deg,#ff00cc,#8a2be2);
+box-shadow:0 0 15px #ff00cc;
+}
+
+/* BOTÃO MENU MOBILE */
+
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+position:absolute;
+top:70px;
+right:0;
+background:#0b001a;
+flex-direction:column;
+padding:30px;
+gap:20px;
+display:none;
+}
+
+nav.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+}
