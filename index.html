@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>NextWeb Tech</title>
 
 <link rel="stylesheet" href="css/style.css">
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 </head>
 
@@ -22,60 +19,79 @@
 <header class="navbar">
 
 <div class="logo-area">
-<img src="img/logo.png" class="logo-small">
-<span class="brand">NextWeb Tech</span>
+<img src="img/logo.png" class="logo">
+<span>NextWeb Tech</span>
 </div>
 
-<button class="menu-toggle" id="menuToggle">
-☰
-</button>
+<button id="menuBtn">☰</button>
 
 <nav id="menu">
-
 <a href="index.html">Início</a>
 <a href="servicos.html">Serviços</a>
 <a href="portfolio.html">Portfólio</a>
 <a href="blog.html">Blog</a>
 <a href="ia.html">IA</a>
-<a href="contato.html" class="btn-menu">Contato</a>
-
+<a class="cta" href="contato.html">Contato</a>
 </nav>
 
 </header>
 
 <section class="hero">
 
-<img src="img/logo.png" class="logo-main">
+<img src="img/logo.png" class="logo-big">
 
 <h1>NextWeb Tech</h1>
 
-<p>Design, desenvolvimento web, edição e soluções digitais</p>
+<p>Design, desenvolvimento web e soluções digitais</p>
 
-<a href="contato.html" class="btn">Solicitar orçamento</a>
+<button onclick="window.location='contato.html'" class="btn-main">
+Solicitar orçamento
+</button>
 
 </section>
 
-<section class="counter">
+<section class="stats">
 
 <div>
-<h2 id="sites">6</h2>
+<h2 id="sites">0</h2>
 <p>Sites Criados</p>
 </div>
 
 <div>
-<h2 id="clientes">2</h2>
+<h2 id="clientes">0</h2>
 <p>Clientes</p>
 </div>
 
 <div>
-<h2 id="projetos">5</h2>
+<h2 id="projetos">0</h2>
 <p>Projetos</p>
 </div>
 
 </section>
 
+<section class="depoimentos">
+
+<h2>Depoimentos</h2>
+
+<div class="reviews">
+
+<div class="review">
+<p>"Excelente trabalho e atendimento."</p>
+<span>Cliente</span>
+</div>
+
+<div class="review">
+<p>"Meu site ficou incrível."</p>
+<span>Cliente</span>
+</div>
+
+</div>
+
+</section>
+
+<script src="libs/particles.min.js"></script>
+<script src="js/particles-config.js"></script>
 <script src="js/main.js"></script>
-<script src="js/particles.js"></script>
 
 </body>
 </html>
